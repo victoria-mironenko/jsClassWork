@@ -20,7 +20,6 @@ const add123 = (a, b) => a + b;
 // })
 // console.log(currency);
 
-
 // let salaries = {
 //     John: 100,
 //     Ann: 160,
@@ -40,19 +39,67 @@ const add123 = (a, b) => a + b;
 // }
 // Sum('Ann','sen','bit');
 
-
 //  const number = (...param) => {
 //      let num = 0;
 //      for (const plus of param) {
 //          num += plus;
-        
+
 //      }
 //      return num;
-//  }   
+//  }
 //  const res = number(1,2,3,4,5,6)
 
 //  console.log(res)
 
- const min = (a, b) =>  (a < b)? a: b;
-    
-console.log(min(22,100));
+const min = (a, b) => (a < b ? a : b);
+
+console.log(min(22, 100));
+
+const sumTo = (n) => {
+  if (n === 1) return n;
+  return n + sumTo(n - 1);
+};
+console.log(sumTo(4));
+
+function calcSum(a) {
+  return function (b) {
+    return a + b;
+  };
+}
+let result = calcSum(30)(70);
+console.log(result);
+
+const list = {
+  a: "a",
+  b: "b",
+  next: {
+    a: "a",
+    b: "b",
+    next: {
+      a: "a",
+      b: "b",
+      next: null,
+    },
+  },
+};
+
+
+const print = (list) => {
+   
+    if (list.next) {
+        
+        return print(list.next);
+        
+        return;
+       
+
+    }
+}
+let string = 'aaa bbb ccc';
+console.log(string.substr(4, 3));
+console.log(string.substring(4,7));
+console.log(string.slice(4, 7));
+string.length
+
+const str = 'Я учу JavaScript'
+

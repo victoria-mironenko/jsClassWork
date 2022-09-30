@@ -101,5 +101,15 @@ console.log(string.substring(4,7));
 console.log(string.slice(4, 7));
 string.length
 
-const str = 'Я учу JavaScript'
+let array = [2, 3, 4, undefined, null, '', false, 5, 6];
 
+// let compact = array.filter((item) => item !== 0 && item !=='' && item !==null && item);
+// console.log(compact);
+let compact = array.filter(Boolean);
+
+let array2 = [1, 2, 3, 4, 5];
+let sumInput = array2.reduce((sum, item) => sum += item, 0);
+console.log(sumInput);
+
+// let array3 = [1, 2, 3, 4, 4, 5, 6];
+// let unique = array3.

@@ -111,5 +111,11 @@ let array2 = [1, 2, 3, 4, 5];
 let sumInput = array2.reduce((sum, item) => sum += item, 0);
 console.log(sumInput);
 
-// let array3 = [1, 2, 3, 4, 4, 5, 6];
-// let unique = array3.
+let fu = array2.reverse();
+console.log(fu);
+
+function forE (ar, fun) {
+  for(let i = 0; i < ar.length; i++) {
+    fun(item)
+  }
+}
